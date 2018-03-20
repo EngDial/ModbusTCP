@@ -19,6 +19,9 @@ MBAP Header (Modbus Application Header):
 [IDTRAN (2 bytes)] | [IDPROT (2 bytes)] | [LENGTH (2 bytes)] | [UID (1 byte)]
 
 IDTRAN - уникальный ID Transaction (не изменяется при ответе)
+
 IDPROT - ID протокола (всегда 0 - для дальнейшего использования)
+
 LENGTH - Длина следующих данных: PDU + 1 (UID) (изменяется в зависимости от PDU)
+
 UID - адрес ведомого устройства, = ID в ModbusRtu
